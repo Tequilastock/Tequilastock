@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>TequilaStock | Leprechaun 1.0</title>
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        .header {
+            background: #1a1a1a;
+            padding: 1rem;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo a {
+            color: #f9c74f;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin: 0 1rem;
+        }
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 400;
+        }
+        .hero {
+            height: 80vh;
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        .hero-content {
+            text-align: center;
+        }
+        .cta-btn {
+            background: #f9c74f;
+            color: #1a1a1a;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-weight: 700;
+            margin-top: 1rem;
+            display: inline-block;
+        }
+        .how-it-works, .about, .login {
+            padding: 4rem 2rem;
+            background: #ffffff;
+            margin: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .steps {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2rem;
+        }
+        .step {
+            width: 30%;
+            background: #f4f4f4;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            background: #1a1a1a;
+            color: #ffffff;
+        }
+        .login-btn {
+            background: #1a1a1a;
+            color: #f9c74f;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 4px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">TequilaStock</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to TequilaStock</h1>
+            <p>Automate your trading and make consistent returns with Leprechaun 1.0.</p>
+            <a href="#login" class="cta-btn">Get Started</a>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <h2>How It Works</h2>
+        <p>Our AI-powered trading system allows you to automate your investments in the stock market, giving you daily updates and effortless gains.</p>
+        <div class="steps">
+            <div class="step">
+                <h3>Step 1</h3>
+                <p>Create your account and link it to your Interactive Brokers account using TequilaStock.com.</p>
+            </div>
+            <div class="step">
+                <h3>Step 2</h3>
+                <p>Our AI, Leprechaun 1.0, will analyze the market and find the best opportunities for you, with full automation using the cloud.</p>
+            </div>
+            <div class="step">
+                <h3>Step 3</h3>
+                <p>Relax while Leprechaun 1.0 makes trades, monitors your returns, and you receive daily reports.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About TequilaStock</h2>
+        <p>TequilaStock LLC is dedicated to making advanced trading technology accessible to everyone. Our AI-driven solution, Leprechaun 1.0, helps automate your trading while focusing on small, consistent gains every day the market is open. Our mission is to empower individuals to leverage the stock market without the need for constant monitoring or expertise. By providing an effortless way to trade and receive consistent earnings, TequilaStock aims to create opportunities for financial growth for all.</p>
+        <p>Join our journey and experience the potential of automated trading with TequilaStock. Whether you’re new to investing or an experienced trader, Leprechaun 1.0 has been designed to simplify your trading experience while maximizing returns. We also offer rubber band bracelets for $6 that say, "I make 1% a day" — an inspiration and reminder of your financial growth with TequilaStock.</p>
+    </section>
+
+    <section id="login" class="login">
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 TequilaStock LLC. All Rights Reserved. Visit <a href="https://tequilastock.com" style="color: #f9c74f;">tequilastock.com</a> to learn more.</p>
+    </footer>
+</body>
+</html>
+

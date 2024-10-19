@@ -7,3 +7,7 @@ selenium==4.5.0
 numpy==1.23.5  # Downgraded version for better compatibility
 os-sys==2.1.4
 extract-zip==1.0.0
+ibapi
+yfinance
+requests
+time
